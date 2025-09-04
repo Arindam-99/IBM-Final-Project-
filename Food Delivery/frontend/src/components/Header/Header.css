@@ -1,0 +1,60 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("../../assets/header_img.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+}
+
+.header-contents .view-menu-btn {
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 1vw 2.3vw;
+  background: var(--accent-gradient);
+  font-size: max(1vw, 14px);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.header-contents .view-menu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
